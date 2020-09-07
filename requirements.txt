@@ -2,10 +2,12 @@ click==7.1.2
 cmake==3.18.2.post1
 dlib==19.21.0
 Flask==1.1.2
+Flask-Cors==3.0.9
 itsdangerous==1.1.0
 Jinja2==2.11.2
 MarkupSafe==1.1.1
 numpy==1.19.1
 opencv-python==4.4.0.42
 scipy==1.5.2
+six==1.15.0
 Werkzeug==1.0.1

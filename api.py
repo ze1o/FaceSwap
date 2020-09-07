@@ -3,6 +3,7 @@ from pathlib import Path
 import base64
 
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import numpy as np
 import cv2
 
@@ -27,6 +28,8 @@ def generate_dst_img_info():
     return info
 
 app = Flask(__name__)
+CORS(app)
+
 
 @app.route('/swap-face', methods=['POST'])
 def swap_face():
